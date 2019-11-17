@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>WEATHER BY PRONKO</title>
+  <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+  <link rel="stylesheet" href="./styleforcity.css">
+  <link rel="stylesheet" href="./styleforcapitale.css">
+  <link rel="stylesheet" href="stylebut.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="ctn">
+<a href="#" onclick="getCapitaleForm()"  class="button2 b-green rot-135">Weather on capital</a>
+<a href="#" onclick="getCityForm()" class="button2 b-red rot-135">Weather on  city</a>
+<a href="#" onclick="window.location.reload()" class="button2 b-pink rot-135">Refresh</a>
+</div>
+<div class='loginOnCity' id="WeatherOnCity" style="display:none;">
+  <div class='login_titleOnCity'>
+    <span>Enter city</span>
+  </div>
+  <div class='login_fieldsOnCity'>
+    <div class='login_fields__userOnCity'>
+      <div class='iconOnCity'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+      </div>
+      <input placeholder='City' id="listCity" type='text'>
+        <div class='validationOnCity'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+        </div>
+      </input>
+    </div>
+    <div class='login_fields__submitOnCity'>
+      <input type='submit' id = "WeatherOnCitySubmit" value='Submit'>
+    </div>
+  </div>
+  <div class='successOnCity'>
+    <h2 id ="name"></h2>
+    <h2 id="temp" ></h2>
+    <h2 id="weather" ></h2>
+    <img id="imgweather" alt="">
+  </div>
+</div>
+<div class='authentOnCity'>
+  <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/puff.svg'>
+  <p>Authenticating...</p>
+</div>
+<div class='loginOnCapital' id="WeatherOnCapital" style="width: 600px;display:none;">
+  <div class='login_titleOnCapital'>
+    <span>Enter city</span>
+  </div>
+  <div class='login_fieldsOnCapital'>
+    <div class='login_fields__userOnCapital'>
+      <div class='iconOnCapital'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+      </div>
+      <div class="dropdown dropdown-dark">
+      <select name="two" class="dropdown-select" id="exampleFormControlSelect">
+        <option value="">Select…</option>
+      </select>
+    </div>
+        <div class='validationOnCapital'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+        </div>
+      </input>
+    </div>
+    <div class='login_fields__submitOnCapital'>
+      <input type='submit' id = "WeatherOnCapitalSubmit"  value='Submit'>
+    </div>
+  </div>
+  <div class='successOnCapital'>
+    <h2 id ="nameforcapitale"></h2>
+    <h2 id="tempforcapitale" ></h2>
+    <h2 id="weatherforcapitale" ></h2>
+    <img id="imgweatherforcapitale" alt="">
+  </div>
+</div>
+<div class='authentOnCapital' id = 'authentOnCapital'>
+  <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/puff.svg'>
+  <p>Authenticating...</p>
+</div>
+<!-- partial -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="wrapper">
+  <ul>
+    <li><a href="https://vk.com/id211051823"><i  class="fa fa-vk" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.instagram.com/pronko_p/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    <li><a href="https://github.com/Decusthesupamida"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    <li><a href="https://teleg.run/pronko_p"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+  </ul>
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script  src="./index.js"></script>
+<script  src="./scriptforcity.js"></script>
+<script  src="./scriptforcapitale.js"></script>
+
+
+</body>
+</html>
